@@ -1,0 +1,80 @@
+
+  .producttable {
+    width: 98%;
+    height: 50px;
+    font-family: HelveticaNeue;
+    margin: 0 10px;
+    border-top: 1px solid #e0e0e0;
+
+    thead {
+      background-color: #fbfbfb;
+      line-height: 50px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #595959;
+      text-align: left;
+      border-top: 1px solid #ccc;
+
+      
+
+      th {
+        text-align: left;
+        font-weight: normal;
+
+      }
+    }
+
+    tbody {
+      tr {
+        position: relative;
+
+        td:first-child,
+        td:last-child {
+          padding: 0 0 0 10px;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: normal;
+          color: #78283c;
+          height: 40px;
+          line-height: 40px;
+        }
+
+        td.action:last-child a:first-child {
+          border-left: 0;
+        }
+
+        td {
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          color: #242424;
+
+
+        }
+
+        
+      }
+    }
+    }
+
+  .search{
+    position: relative;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+
+.no-result{
+  text-align: center;
+  display: block;
+}

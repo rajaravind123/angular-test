@@ -1,0 +1,37 @@
+<div class="container landing"> 
+  <div class="productcontainer mainsection products">
+    <div class="cmstitle">
+    </div>
+  <div class="news-bulletins-table mat-elevation-z8">
+    <div class="search">
+     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </div>
+
+      <table BORDER=1 cellspacing=0 class="producttable">
+        <thead>
+          <tr>
+            <th>NB Id</th>
+            <th> Food description </th>  
+          </tr>
+        </thead>
+        <tbody>
+            <div class="table__noresult" *ngIf="dataSource && dataSource!=null && dataSource.data.length==0">
+              <span class="no-result">No result found</span>
+            </div>
+          <ng-container *ngFor="let data of getProductData">
+            <tr class="main-product">
+              <td class="previewClass">{{data.sr}}/td>
+              
+            </tr>
+            
+          
+            
+          </ng-container>
+        </tbody>
+      </table>
+
+
+
+    </div>
+  </div>
+</div>
